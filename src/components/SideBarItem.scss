@@ -1,24 +1,28 @@
-.sidebar-item {
-  background: #f5f5f5;
-  span {
-    i.icon {
-      margin-right: 20px;
-      color: #888888;
-    }
-  }
+.ui.vertical.menu {
+  width: 20rem !important;
+}
 
-  &.highlight-item {
-    span {
-      font-weight: 600;
-    }
-
-    i.icon {
-      color: #ff0002;
-    }
-  }
+.container {
+  align-items: center !important;
+  margin: 35px;
 }
 
 .sidebar-item-alignment-container {
   display: flex;
   align-items: center;
+}
+
+.ui.vertical.menu .item > i.icon {
+  width: 1.18em;
+  float: left !important;
+  margin: 0 0 0 0.5em;
+}
+
+.item {
+  font-size: 20px !important;
+  padding: 20px 25px !important;
+}
+
+.content {
+  color: #fff !important;
 }

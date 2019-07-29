@@ -3,15 +3,19 @@ import { Icon, Menu } from "semantic-ui-react";
 import "./SideBarItem.scss";
 
 export function SideBarItem(props) {
-  const highlight = props.highlight ? "highlight-item" : null;
   return (
-    <Menu.Item className={["sidebar-item", highlight].join(" ")}>
-      <div className="sidebar-item-alignment-container">
-        <span>
-          <Icon size="large" name={props.icon} />{" "}
-        </span>
-        <span>{props.label}</span>
+    <div role="list" class="ui list">
+      <div role="listitem" class="item">
+        <i
+          aria-hidden="true"
+          class="grey inverted calendar alternate outline icon"
+        />
+        <div class="content">Reservas</div>
       </div>
-    </Menu.Item>
+      <div role="listitem" class="item">
+        <i aria-hidden="true" class="grey inverted film icon" />
+        <div class="content">Peliculas</div>
+      </div>
+    </div>
   );
 }

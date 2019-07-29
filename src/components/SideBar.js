@@ -7,8 +7,13 @@ export class SideBar extends React.Component {
   render() {
     return (
       <Menu borderless vertical stackable fixed="left" className="side-nav">
-        <SideBarItem highlight={true} label="Reservas" icon="home" />
-        <SideBarItem label="Peliculas" icon="fire" />
+        <div class="ui container">
+          <img
+            src="https://blog.placeit.net/wp-content/uploads/2018/01/placeit-logo-white-1024x252.png"
+            style={{ width: "15rem" }}
+          />
+        </div>
+        <SideBarItem />
       </Menu>
     );
   }
