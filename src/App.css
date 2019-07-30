@@ -1,0 +1,17 @@
+.DateRangePicker {
+  position: relative;
+  display: inline-block;
+  width: max-content !important;
+}
+
+.DateInput {
+  width: auto !important;
+}
+
+input#startDateRange {
+  border: 0px;
+}
+
+input#endDateRange {
+  border: 0px;
+}

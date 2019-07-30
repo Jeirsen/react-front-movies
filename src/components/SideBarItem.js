@@ -1,21 +1,27 @@
 import React from "react";
-import { Icon, Menu } from "semantic-ui-react";
 import "./SideBarItem.scss";
+import { NavLink } from "react-router-dom";
 
-export function SideBarItem(props) {
+const SideBarItem = props => {
   return (
-    <div role="list" class="ui list">
-      <div role="listitem" class="item">
+    <div role="list" className="ui list">
+      <div role="listitem" className="item">
         <i
           aria-hidden="true"
-          class="grey inverted calendar alternate outline icon"
+          className="grey inverted calendar alternate outline icon"
         />
-        <div class="content">Reservas</div>
+        <NavLink className="content" to="/booking">
+          Reservas
+        </NavLink>
       </div>
-      <div role="listitem" class="item">
-        <i aria-hidden="true" class="grey inverted film icon" />
-        <div class="content">Peliculas</div>
+      <div role="listitem" className="item">
+        <i aria-hidden="true" className="grey inverted film icon" />
+        <NavLink className="content" to="/">
+          Peliculas
+        </NavLink>
       </div>
     </div>
   );
-}
+};
+
+export default SideBarItem;
